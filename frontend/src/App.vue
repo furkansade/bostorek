@@ -1,20 +1,22 @@
 <template>
-    <div>
-        <h5>{{ name }}</h5>
-    </div>
+    <NavBar />
 </template>
 
 <script>
+    import NavBar from "@/components/NavBar.vue"
+
     export default {
         name: "App",
-        data() {
-            return {
-                name: "sadeSoftware",
-            }
+        components: {
+            NavBar,
         }
     }
 </script>
 
-<style lang="scss" scoped>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+    html, body {
+        font-family: "Mulish", sans-serif;
+    }
 </style>
